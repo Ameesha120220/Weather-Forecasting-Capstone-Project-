@@ -1,0 +1,253 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="home-page-new.component.css">
+
+<body>
+  <div class="blur">
+    <div class="container-fluid px-1 px-sm-1 mx-auto">
+      <div class="row d-flex justify-content-center">
+        <div class="card0">
+          <!-- nav bar -->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <img src="../../assets/night.png" alt="" style="width: 4rem; padding-right: 1rem;">
+              <a class="navbar-brand" href="#">forecast.now</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/fav">Favorites</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Map</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/about">About Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- nav bar ends -->
+
+          <div class="lr">
+            <!-- card1 starts -->
+            <div class="card1 col-lg-8 col-md-6">
+
+              <div class="row px-3 mt-3 mb-3">
+                <div class="container mt-5">
+                  <div class="d-flex flex-row justify-content-center align-items-center">
+                    <div class="weather__card">
+
+
+
+                      <div class="search">
+
+                        <input class="text" type="text" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+                          aria-expanded="false" aria-controls="collapseWidthExample" placeholder="Search" />
+                        <span class="link"><i class="bi bi-search"></i></span>
+                      </div>
+
+
+                      <div class="d-flex flex-row justify-content-center align-items-center cc1">
+                        <div class="p-3">
+                          <h1 style="font-size: 3.5rem; margin-top: .8rem; margin-left: -40px;">15&deg;</h1>
+                        </div>
+                        <div class="p-3">
+                          <i class="bi bi-brightness-high" style="font-size: 2rem;"></i>
+                        </div>
+                        <div class="p-3">
+                          <h4 class="date">Tuesday, 10 AM</h4>
+
+                          <a><span style=" font-size: 2.5rem; padding-bottom: 1rem;">London</span></a><br>
+
+                          <span class="weather__description">Mostly Cloudy</span>
+                        </div>
+                      </div>
+
+                      <div class="weather__status d-flex flex-row justify-content-center align-items-center mt-3">
+                        <div class="p-4 d-flex justify-content-center align-items-center">
+                          <i class="bi bi-droplet" style="font-size: 2rem;"></i>
+                          <span>10%</span>
+                        </div>
+                        <div class="p-4 d-flex justify-content-center align-items-center">
+                          <i class="bi bi-thermometer-low" style="font-size: 2rem;"></i>
+                          <span>0.53 mB</span>
+                        </div>
+                        <div class="p-4 d-flex justify-content-center align-items-center">
+                          <i class="bi bi-wind" style="font-size: 2rem;"></i>
+                          <span>10 km/h</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- 7 days weather -->
+              <div class="weather__forecast d-flex flex-row justify-content-center align-items-center">
+
+                <div class="p-4 d-flex flex-column justify-content-center align-items-center">
+                  <span>Mon</span>
+                  <i class="bi bi-cloud-drizzle" style="font-size: 2rem;"></i>
+                  <span>11&deg;</span>
+                </div>
+                <div class="p-4 d-flex flex-column justify-content-center align-items-center">
+                  <span>Tue</span>
+                  <i class="bi bi-cloud-lightning" style="font-size: 2rem;"></i>
+                  <span>6&deg;</span>
+                </div>
+                <div class="p-4 d-flex flex-column justify-content-center align-items-center">
+                  <span>Wed</span>
+                  <i class="bi bi-brightness-high" style="font-size: 2rem;"></i>
+                  <span>15&deg;</span>
+                </div>
+                <div class="p-4 d-flex flex-column justify-content-center align-items-center">
+                  <span>Thu</span>
+                  <i class="bi bi-cloud-lightning-rain" style="font-size: 2rem;"></i>
+                  <span>15&deg;</span>
+                </div>
+                <div class="p-4 d-flex flex-column justify-content-center align-items-center">
+                  <span>Fri</span>
+                  <i class="bi bi-cloudy" style="font-size: 2rem;"></i>
+                  <span>13&deg;</span>
+                </div>
+              </div>
+              <a href="#" class="">
+                <button class="btn">
+                  <svg class="icon" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z">
+                    </path>
+                  </svg>
+                </button>
+              </a>
+            </div>
+            <!-- card1 ends -->
+
+            
+            <!-- right side -->
+            <!-- card2 starts -->
+
+            <div class="card2 col-lg-4 col-md-4">
+              <div class="col-px-3">
+
+                <div class="row" style="display: flex; flex-direction: row;">
+                  <div class="col-5 p-1">
+                    <div class="card3">
+
+                      <div class="card-body pb-0">
+                        <div class="d-flex justify-content-between">
+                          <p class="mb-0 hour" style="font-weight: bold;">8:10 PM</p>
+                        </div>
+                      </div>
+                      <!-- <hr> -->
+                      <div class="card-body pb-0">
+                        <p>Cloudy</p>
+                        <p class="mb-0 h3" style="float: right;">14&deg;</p>
+                        <i class="bi bi-cloudy" style="font-size: 2rem;"></i>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-5 p-1">
+                    <div class="card3">
+                      <div class="card-body pb-0">
+                        <i class="fas fa-cloud fa-3x pb-4"></i>
+                        <div class="d-flex justify-content-between">
+                          <p class="mb-0 hour" style="font-weight: bold;">12:15 PM</p>
+                        </div>
+                      </div>
+                      <!-- <hr> -->
+                      <div class="card-body pb-0">
+                        <p>Humidity</p>
+                        <p class="mb-0 h3" style="float: right;">15&deg;</p>
+                        <i class="bi bi-brightness-high" style="font-size: 2rem;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-5 p-1 mb-1">
+                    <div class="card3">
+
+                      <div class="card-body pb-0">
+                        <div class="d-flex justify-content-between">
+                          <p class="mb-0 hour" style="font-weight: bold;">12:15 PM</p>
+                        </div>
+                      </div>
+                      <!-- <hr> -->
+
+                      <div class="card-body pb-0">
+                        <!-- <h6 class="font-weight-bold mb-1">San Francisco</h6> -->
+                        <p>Wind</p>
+                        <p class="mb-0 h3" style="float: right;">15&deg;</p>
+                        <i class="bi bi-wind" style="font-size: 2rem;"></i>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-5 p-1">
+                    <div class="card3">
+                      <div class="card-body pb-0">
+                        <div class="d-flex justify-content-between">
+                          <p class="mb-0 hour" style="font-weight: bold;">12:15 PM</p>
+                        </div>
+                      </div>
+                      <!-- <hr> -->
+                      <div class="card-body pb-0">
+                        <p>Rain</p>
+                        <p class="mb-0 h3" style="float: right;">15&deg;</p>
+                        <i class="bi bi-cloud-drizzle" style="font-size: 2rem;"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-11">
+                      <div class="card4">
+                        <div class="card-body pb-0" style="display: flex; flex-direction: column; line-height: 1.8rem;">
+
+                          <a><span style="padding-right: 5rem;">Sunrise</span><i class="bi bi-sunrise"
+                              style="font-size: 1.5rem;"></i></a>
+                          <a><span style="padding-right: 5rem;">Sunset</span><i class="bi bi-sunset"
+                              style="font-size: 1.5rem;"></i></a>
+                          <a><span style="padding-right: 4rem;">Moonrise</span> <i class="bi bi-moon"
+                              style="font-size: 1.5rem;"></i></a>
+                          <a><span style="padding-right: 5rem;">Moonset</span><i class="bi bi-cloud-moon"
+                              style="font-size: 1.5rem;"></i></a>
+                          <a><span style="padding-right: 4rem;">Moonphase</span><i class="bi bi-moon-stars"
+                              style="font-size: 1.5rem; font-weight: bold;"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card2 end -->
+
+          </div>
+
+          <!-- right card ends -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+</body>

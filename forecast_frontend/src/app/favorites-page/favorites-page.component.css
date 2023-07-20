@@ -1,0 +1,75 @@
+.container-fluid {
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: auto;
+  background-image: url(../../assets/simon-berger-twukN12EN7c-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.2px);
+  -webkit-backdrop-filter: blur(3.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.chip {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+mat-chip-option {
+  margin: 1rem;
+}
+
+.listbox {
+  background: rgba(0, 0, 0, 0.224);
+  padding: 20px;
+  height: fit-content;
+  border-radius: 4px;
+  height: 24rem;
+}
+
+
+.bth {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+mat-toolbar-row{
+  display: flex;
+  justify-content: left;
+}
+
+mat-icon{
+  margin-right: .4rem;
+}
+
+.title{
+  margin-top: 3.3px;
+  color: black;
+  font-size: large;
+}
+
+
+
